@@ -99,7 +99,7 @@ app.get("/contacts", (req, res) => {
 
 app.get("/contacts/new", (req, res) => {
   res.render('add_contact', {
-  })
+  });
 });
 
 const validateName = (name, whichName) => {
@@ -154,7 +154,6 @@ app.post("/contacts/new",
     res.redirect("/contacts");
   }
 );
-
 
 
 app.listen(3000, "localhost", () => {
